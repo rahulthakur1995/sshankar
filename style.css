@@ -1806,20 +1806,18 @@ form textarea{
 /*=======================================================FOOTER STYLING START========================================================*/
 
 .footer{
-    background: var(--second-bg-color);
-    position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 100vw;
-    height: 75px;
-    top: 100vh;
     align-items: center;
-    justify-content: center;
-    left: 0;
-    right: 0;
+    justify-content: space-between;
+    background-color: var(--second-bg-color);
+    padding: 10px 0;
+    margin-top: auto;
     bottom: 0;
-    border-top: 1px solid var(--border-color);
+    height: 75px;
+    width: 100%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .footer-content p{
@@ -1843,12 +1841,6 @@ form textarea{
 .footer a i:hover{
     color: var(--hover-color);
     transform: translateY(-5px);
-}
-
-@media screen and (max-width:1496px){
-    .footer{
-        position: inherit;
-    }
 }
 
 /*=======================================================FOOTER STYLING END========================================================*/
